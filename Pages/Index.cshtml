@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container">
+    <div id="tictactoeZone">
+        <table>
+            <tbody>
+                <tr>
+                    <td><input type="button" row="0" col="0"/></td>
+                    <td><input type="button" row="0" col="1"/></td>
+                    <td><input type="button" row="0" col="2"/></td>
+                </tr>                        
+                <tr>                         
+                    <td><input type="button" row="1" col="0"/></td>
+                    <td><input type="button" row="1" col="1"/></td>
+                    <td><input type="button" row="1" col="2"/></td>
+                </tr>                        
+                <tr>                         
+                    <td><input type="button" row="2" col="0"/></td>
+                    <td><input type="button" row="2" col="1"/></td>
+                    <td><input type="button" row="2" col="2"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/tictactoe.js"></script>
